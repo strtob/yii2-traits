@@ -1,0 +1,19 @@
+{
+    "name": "strtob/yii2-traits",
+    "description": "Collection of traits for yii2 model",
+    "type": "yii2",
+    "require": {
+        "yiisoft/yii2": "^2.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "strtob\\yii2Traits\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Tobias Streckel"
+        }
+    ]
+}

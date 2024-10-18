@@ -8,3 +8,26 @@ To include the `ValidityTrait` in your Yii2 project, you can either clone this r
 
 ```bash
 composer require strtob/yii2-traits
+```
+
+Example of use as yii2 gridview column:
+
+```bash
+    [
+            'attribute' => 'status',                
+            'label' => yii::t('app', 'Status'), 
+            'format' => 'raw',
+            'value' => function ($model) {
+                $v = $model->validityStage;
+
+                $r = '<div class="d-flex"><div>';
+                $r .= '<i class="' . $v->icon . ' me-2"></i>';
+                $r .= '</div>';
+                $r .= '<div>';
+                $r .= $v->message;
+                $r .= '<div><small>' . $v->relative_time . '</small></div>';
+                $r .= '</div></div>';
+                return $r;
+            },
+        ],
+```

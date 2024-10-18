@@ -10,6 +10,19 @@ To include the `ValidityTrait` in your Yii2 project, you can either clone this r
 composer require strtob/yii2-traits
 ```
 
+Example how to implement in Active Record class:
+
+```bash
+/**
+ * This is the model class for table "tbl_department".
+ */
+class Department extends BaseDepartment
+{
+
+    use \strtob\yii2Traits\ValidityTrait;
+```
+
+
 Example of use as yii2 gridview column:
 
 ```bash

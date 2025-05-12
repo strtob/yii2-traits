@@ -8,5 +8,10 @@
             "name": "Tobias Streckel"
         }
     ],
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "strtob\\yii2Traits\\": ""
+        }
+    }
 }
